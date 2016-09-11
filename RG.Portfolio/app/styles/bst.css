@@ -1,0 +1,30 @@
+.row.infoBar {
+  padding-top: 5px; }
+  .row.infoBar div.col-xs-12 {
+    padding-right: 0px; }
+  .row.infoBar p {
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px; }
+
+#circle {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 17.5px;
+  background: green; }
+  #circle #text {
+    z-index: 1;
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    font-size: 100%;
+    top: 9px;
+    left: 10px; }
+
+#circle:hover {
+  background: grey; }
+  #circle:hover #text {
+    color: white; }
+
+/*# sourceMappingURL=bst.css.map */

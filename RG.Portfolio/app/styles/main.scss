@@ -1,0 +1,318 @@
+*{
+  font-family: "Lucida Console";
+}
+
+$main-color: #23eec4;
+$secondary-color: #64b3b1;
+$third-color: #36b18e;
+
+@mixin rightleftFill($color1, $color2){
+  background: linear-gradient(to left, $color1 50%, $color2 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position .5s ease;
+  border: none;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.btn-mine{
+  @include rightleftFill($main-color, $secondary-color);
+}
+
+.btn-mine:hover{
+  background-position: left bottom;
+}
+
+#upTop{
+  display: none;
+
+  .fa-caret-square-o-up{
+    color: black;
+  }
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.row-content,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-image: url('../images/about me images/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+  color: white;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav li:hover,
+.nav a:hover,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > li:hover{
+  font-weight:bolder;
+  background-position: left bottom;
+}
+
+.navbar-default .navbar-nav > .active > li,
+.navbar-default .navbar-nav > .active > li:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus{
+  @include rightleftFill($main-color, $secondary-color);
+}
+
+.nav li,
+.nav a{
+  @include rightleftFill(#f8f8f8, $secondary-color)
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.row-content {
+  margin-left: 0px;
+  border-bottom: 5px groove;
+  min-height: 250px;
+  padding-bottom: 10px;
+}
+
+.last{
+  border-bottom: none;
+}
+
+.hireme{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+
+  .btn-social-icon{
+    color: black;
+  }
+}
+
+.hiresubmit{
+  font-weight: bold;
+}
+
+.infoBar{
+  padding-top: 5px;
+
+  div.col-xs-12{
+    padding-right:0px;
+  }
+  p{
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+}
+
+
+.grid {
+
+  .row, .col-md-4 {
+    min-height: 150px;
+  }
+
+  .col-md-4{
+    border-bottom: solid 1px;
+  }
+
+  .last-grid{
+    border-bottom: none;
+  }
+}
+
+.grid-pic{
+  display: block;
+  margin: auto;
+  width: 50%;
+  max-height: 150px;
+}
+
+.grid-pic:hover{
+  cursor: pointer;
+}
+
+.gameTitle{
+  margin: auto;
+  width: 97%
+}
+
+.projectpic{
+  margin-top: 10px;
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-height: 550px;
+}
+
+.centered{
+  margin: auto;
+}
+
+.formline{
+  margin-bottom: 20px;
+}
+
+canvas {
+  background: #eee;
+  margin: auto;
+  width: 97%;
+
+  display: block;
+  border: 1px black solid;
+}
+
+.fa-envelope-o{
+  color: white;
+}
+
+.row-content.pic{
+  min-height: 150px;
+  padding: 0;
+}
+
+
+
+
+
+.round-pic{
+  display: block;
+  margin: 0 auto;
+  border-radius: 62.5px;
+  width: 125px;
+  height: 125px;
+}
+
+.resume-pic{
+  width: 125px;
+  height: 125px;
+}
+
+.progress-bar-mine{
+  background-image: linear-gradient(to bottom, $third-color 0%, $secondary-color 30%, $main-color 100%);
+  color: black;
+}
+
+@media screen and (min-width: 768px){
+  .grid{
+    .row, .col-md-4{
+      min-height: 150px;
+      border-bottom: none;
+    }
+
+    .mid{
+      border: solid 1px;
+      max-height: 150px;
+    }
+
+    .mid-mid{
+      .grid-pic{
+        max-height: 147px;
+      }
+
+    }
+
+    .mid.midTB{
+      border-bottom: none;
+      border-top: none
+    }
+
+    .mid.midLR{
+      border-right: none;
+      border-left: none;
+    }
+  }
+
+  .grid-pic{
+    width: 90%;
+  }
+
+
+  .projectpic-scaled{
+    width: 30%;
+  }
+
+  .round-pic-bigger{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 950px) {
+  .container, .row, .row-content {
+    max-width: 930px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  .hireme{
+    bottom: 15px;
+    right: 25px;
+  }
+
+
+
+}
+
+
+

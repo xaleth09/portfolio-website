@@ -1,0 +1,50 @@
+<div class="header">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Roberto_Garza</a>
+      </div>
+
+      <div id="myNavbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li ng-class="{active:isActive('/')}">
+            <a ui-sref="app" ng-click="select(1)"><span class="glyphicon glyphicon-home"></span> Home</a>
+          </li>
+          <li ng-class="{active:isActive('/projects')}">
+            <a ui-sref="app.projects"  ng-click="select(2)"><span class="glyphicon glyphicon-console"></span> Projects</a>
+          </li>
+          <li ng-class="{active:isActive('/resume')}">
+            <a ui-sref="app.resume"  ng-click="select(3)"><span class="glyphicon glyphicon-certificate"></span> Resume</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron" id="jumbowombo">
+      <h1>Roberto Garza</h1>
+      <h2>
+        <img src="images/about me images/me.jpeg" class="round-pic round-pic-bigger" alt="Roberto Garza"><br>
+        Software Developer<br>
+      </h2>
+      <a class="btn btn-social-icon btn-github" href="http://www.github.com/xaleth09"><i class="fa fa-github"></i></a>
+      <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/garzaRoberto21"><i class="fa fa-linkedin"></i></a>
+      <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/robbi.garza"><i class="fa fa-facebook"></i></a>
+      <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/xaleth09"><i class="fa fa-twitter"></i></a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+

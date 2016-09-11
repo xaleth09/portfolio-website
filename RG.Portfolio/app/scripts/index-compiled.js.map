@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;AAAA;;;AAGA,QAAQ,gBAAR;AACA,QAAQ,OAAR","file":"index-compiled.js","sourcesContent":["/**\n * Created by xaleth on 8/14/2016.\n */\nrequire('babel-polyfill');\nrequire('./app');\n"]}
